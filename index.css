@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  min-width: 320px;
+  background-color: #d2d6d9;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .container-h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 2rem;
+  color: #0da64f;
+}
+
+.container .main {
+  margin: 0 auto;
+  width: 250px;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .main input {
+  align-self: center;
+  width: 250px;
+  height: 30px;
+  border: 3px solid #757575;
+  border-radius: 8px;
+}
+
+.container .main button {
+  align-self: center;
+  width: 150px;
+  height: 30px;
+  background-color: #f27405;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  border-width: 0;
+  border-radius: 8px;
+}
+
+.container .container-second {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .container-second h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container .container-second p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.container .container-second .humidity {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.container .container-second p strong {
+  margin-left: 10px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.m1 {
+  width: 80px;
+  height: 80px;
+  /* background-image: url("./images/nublado.svg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nublado {
+  background-image: url("./images/nublado.svg");
+}
+.soleado {
+  background-image: url("./images/soleado.svg");
+}
+.nevando {
+  background-image: url("./images/nieve.svg");
+}
+
+@media (min-width: 600px) {
+  .container .main {
+    width: 400px;
+    height: 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .container .main input {
+    width: 280px;
+    height: 30px;
+  }
+  .container .main button {
+    width: 100px;
+    height: 30px;
+  }
+  .container .container-second {
+    width: 400px;
+    height: 400px;
+  }
+
+  .container .container-second {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .container .main button:hover {
+    background-color: #04bf45;
+  }
+}
